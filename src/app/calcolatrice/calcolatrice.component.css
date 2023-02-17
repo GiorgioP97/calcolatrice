@@ -10,15 +10,24 @@ input[type=number] {
   }
 
   #contenitore{
-    width: 250px;
-    height: 400px;
+    width: 220px;
+    height: 200px;
+    margin:50px;
+    padding: 10px 30px 140px 30px;
+    
+    border: none; /* <-- This thing here */
+    border:solid 1px #ccc;
+    border-radius: 7px;
+    box-shadow: 5px 10px;
   }
 
   #schermi{
-    height: 25%;
+    height: 30%;
+    display: block;
+    padding-bottom: 50px;
   }
   #tastiera{
-    height: 75%;
+    height: 70%;
   }
 
   div.bottoni{
@@ -28,12 +37,26 @@ input[type=number] {
     height: 25%;
   }
 
-  #schermi input[type="number"]  { 
+  #schermi input  { 
     width: 100%;
+    height: 33%;
+    box-sizing:border-box;
+  }
+
+  #schermi input[type="number"]  { 
+    width: 70%;
+    float: right;
+    box-sizing:border-box;
+    height: 100%;
+  }
+
+  #schermi input[type="text"]  {  
+    margin-bottom: 20px;
   }
 
   div.bottoni input[type="button"]  { 
     width: 100%;
-    height: 100%;
-    height: 2em;
+    box-sizing: content-box;
+    font-size:1.3em;
   }
+  

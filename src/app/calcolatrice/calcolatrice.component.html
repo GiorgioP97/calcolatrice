@@ -1,30 +1,48 @@
-
 <div id="contenitore">
+    <h2>Calcolatrice</h2>
     <div id="schermi">
-        <input type="number" [value]="valueMemo">
+        
+        <div>
+            <input type="text" [value]="valueTracciamento">
+            <label for="memo"></label>
+        </div>
+        
+        <div>
+            <label for="memo">memo</label>
+            <input type="number" id="memo" [value]="valueMemo">
+        </div>
+        
         <br>
-        <input type="number" [value]="valueDisplay">
+        <div>
+            <label for="display">display</label>
+            <input type="number" id="display" [value]="valueDisplay">
+        </div>
+        
     </div>
     <div id="tastiera">
         <div class="bottoni">
-            <input type="button" value="7" class="colonna1" (click)="buttonClick($event)">
-            <input type="button" value="8" class="colonna2" (click)="buttonClick($event)">
-            <input type="button" value="9" class="colonna3" (click)="buttonClick($event)">
+            <input type="button" value="7" (click)="buttonClick($event)">
+            <input type="button" value="8" (click)="buttonClick($event)">
+            <input type="button" value="9" (click)="buttonClick($event)">
+            <input type="button" id="piu" value="+" (click)="buttonClick($event)">
         </div>
         <div class="bottoni">
-            <input type="button" value="4" class="colonna1" (click)="buttonClick($event)">
-            <input type="button" value="5" class="colonna2" (click)="buttonClick($event)">
-            <input type="button" value="6" class="colonna3" (click)="buttonClick($event)">
+            <input type="button" value="4"  (click)="buttonClick($event)">
+            <input type="button" value="5" (click)="buttonClick($event)">
+            <input type="button" value="6" (click)="buttonClick($event)">
+            <input type="button" id="meno" value="-" (click)="buttonClick($event)">
         </div>
         <div class="bottoni">
-            <input type="button" value="1" class="colonna1" (click)="buttonClick($event)">
-            <input type="button" value="2" class="colonna2" (click)="buttonClick($event)">
-            <input type="button" value="3" class="colonna3" (click)="buttonClick($event)">
+            <input type="button" value="1" (click)="buttonClick($event)">
+            <input type="button" value="2" (click)="buttonClick($event)">
+            <input type="button" value="3" (click)="buttonClick($event)">
+            <input type="button" id="per" value="*" (click)="buttonClick($event)">
         </div>
         <div class="bottoni">
-            <input type="button" id="piu" value="+" class="colonna1" (click)="buttonClick($event)">
-            <input type="button" value="0" class="colonna2" (click)="buttonClick($event)">
-            <input type="button" id="uguale" value="=" class="colonna3" (click)="buttonClick($event)">
+            <input type="button" id="cancella" value="CLR" (click)="buttonClick($event)">
+            <input type="button" value="0" (click)="buttonClick($event)">
+            <input type="button" id="uguale" value="=" (click)="buttonClick($event)">
+            <input type="button" id="divido" value="/" (click)="buttonClick($event)">
         </div>
     </div>
 </div>
