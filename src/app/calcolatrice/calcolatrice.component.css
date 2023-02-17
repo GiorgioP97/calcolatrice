@@ -1,0 +1,39 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  #contenitore{
+    width: 250px;
+    height: 400px;
+  }
+
+  #schermi{
+    height: 25%;
+  }
+  #tastiera{
+    height: 75%;
+  }
+
+  div.bottoni{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 25%;
+  }
+
+  #schermi input[type="number"]  { 
+    width: 100%;
+  }
+
+  div.bottoni input[type="button"]  { 
+    width: 100%;
+    height: 100%;
+    height: 2em;
+  }

@@ -1,0 +1,31 @@
+
+<div id="contenitore">
+    <div id="schermi">
+        <input type="number" [value]="valueMemo">
+        <br>
+        <input type="number" [value]="valueDisplay">
+    </div>
+    <div id="tastiera">
+        <div class="bottoni">
+            <input type="button" value="7" class="colonna1" (click)="buttonClick($event)">
+            <input type="button" value="8" class="colonna2" (click)="buttonClick($event)">
+            <input type="button" value="9" class="colonna3" (click)="buttonClick($event)">
+        </div>
+        <div class="bottoni">
+            <input type="button" value="4" class="colonna1" (click)="buttonClick($event)">
+            <input type="button" value="5" class="colonna2" (click)="buttonClick($event)">
+            <input type="button" value="6" class="colonna3" (click)="buttonClick($event)">
+        </div>
+        <div class="bottoni">
+            <input type="button" value="1" class="colonna1" (click)="buttonClick($event)">
+            <input type="button" value="2" class="colonna2" (click)="buttonClick($event)">
+            <input type="button" value="3" class="colonna3" (click)="buttonClick($event)">
+        </div>
+        <div class="bottoni">
+            <input type="button" id="piu" value="+" class="colonna1" (click)="buttonClick($event)">
+            <input type="button" value="0" class="colonna2" (click)="buttonClick($event)">
+            <input type="button" id="uguale" value="=" class="colonna3" (click)="buttonClick($event)">
+        </div>
+    </div>
+</div>
+
